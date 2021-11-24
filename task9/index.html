@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <div class="cont">
+    <div class="card">
+      <div class="img1">
+        <hr style="width: 725px;">
+        </hr>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+      <script>
+        const textInfo = [
+          {
+            name: "The Taj Mahal Palace"
+          },
+          {
+            name: "President,Mumbai"
+          },
+          {
+            name: "Taj Lands End"
+          },
+          {
+            name: "Lorem ipsum dolor"
+          },
+          {
+            name: "Lorem ipsum dolor sit met,consecutetur",
+          },
+          {
+            name: "Lorem ipsum dolor sit",
+          },
+          {
+            name: "Lorem ipsum dolor sit",
+          }
+        ];
+        textInfo.forEach((text) => {
+          createText(text);
+        });
+        function createText(text) {
+          let sample = document.querySelector(".container")
+          sample.innerHTML += `
+              <div class="card1" onclick=".active">
+              <div class="pm" ><p class="p1">${text.name}</p></div>
+              </div>`
+            ;
+        }
+
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>
